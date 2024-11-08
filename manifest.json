@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "only megastudy",
+    "description": "extensions by Quema",
+    "version": "0.0.1",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "windows",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+}
