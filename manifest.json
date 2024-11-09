@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "only megastudy",
     "description": "extensions by Quema",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "permissions": [
         "activeTab",
         "tabs",
