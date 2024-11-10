@@ -6,5 +6,5 @@ chrome.tabs.onCreated.addListener((tab) => {
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status !== "complete") return;
     console.log(tab);
-    if (tab.url === 'chrome://extensions/') return chrome.tabs.update(tabId, { url: 'https://www.megastudy.net' });
+    if (tab.url.startsWith('chrome://extensions/')) return chrome.tabs.update(tabId, { url: 'https://www.megastudy.net' });
 });
